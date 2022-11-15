@@ -1,0 +1,66 @@
+//main../styleContact.css
+
+.modalPhone{
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color:rgba($color: #000000, $alpha: 0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	
+    pointer-events: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+	z-index: 1000;
+}
+
+.modalPhone.activ{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.modal_body_phone{
+    min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+.modal_content_phone{
+    position: relative;
+	background-color: #fff;
+	color: #000;
+	max-width: 800px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.modal_title_phone{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.modal_close_phone{
+    position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 30px;
+	color: #000;
+    text-decoration: none;
+}
+
+.modal_close_phone:hover{
+	color: #000;
+}
+
+.modal_text_form{
+	margin-top: 10px;
+}
+
+.btn{
+	margin-top: 10px;
+}

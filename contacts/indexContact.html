@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="styleContact.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <title>Shop</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand"><img src="../img/Elevation_Clothing-Woodstock-Vermont.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../product/indexProduct.html" class="nav-link">Тoвар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about/indexAbout.html" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="img">
+        <img class="imgCont" src="../img/rsz_kontakt-min.jpg" alt="">
+        <a  href="#popupMail" class="mailContact" id="myMail" >@</a>
+        <a  href="#modalMessenger" class="messengerContact"  >&#9993;</a>
+        <a  href="#modalPhone" class="PhoneContact">&#91;</a>
+      
+    </div>
+
+    <!-- modal -->
+    <!-- modal mail -->
+    <div class="container">
+        <div class="popupMail " id="popupMail">
+            <a href="#img" class="popup_close2"></a>
+            <div class="popup_body  ">
+                <div class="popup_content  ">
+                    <a href="#img" class="popup_close">&times;</a>
+                    
+                    <div class="popup_title" id="idTitle"></div>
+                    <form class="popupForm " method="POST" action="" >
+                        <div class="form-group">
+                         
+                            <div class="popup_text" >Ваше имя</div>
+                            <input id="popupName" type="text" name="name" placeholder="Введите имя" class=" input-group-text" minlength="2" maxlength="30" required='required'>
+                           
+                            <div class="popup_text" >Ваш телефон</div>
+                            <input type="text" name="phone" placeholder="Введите телефон" class=" input-group-text" required>
+                                                    
+                            <div class="popup_text" >Ваше сообщение</div>
+                            <textarea type="text" name="text" placeholder="Введите сообщение" class="form-control input-group-text" required></textarea>
+                            
+                            <button type="submit" class="btn btn-success">Отправить</button>
+                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal messanger -->
+    <div class="container">
+        <div class="modalMessenger row" id="modalMessenger">
+            <div class="modal_body_mess">
+                <div class="modal_content_mess">
+                    <a href="#img" class="modal_close_mess">&times;</a>
+                    <div class="modal_title_mess" id="idTitle"></div>
+                    <form class="modalForm">
+                        <div class="form-group">
+                           
+                                <div class="modal_text_form" >Ваше имя</div>
+                                <input type="text" name="name" placeholder="Введите имя"class="input-group-text">
+                           
+                                <div class="modal_text_form" >Ваш телефон</div>
+                                <input type="number" name="phone" placeholder="Введите телефон" class="input-group-text">
+                           
+                                <div class="modal_text_form" >Ваше сообщение</div>
+                                <textarea type="text" name="text" placeholder="Введите сообщение" class="form-control input-group-text"></textarea>
+                           
+                        </div>
+                        <button type="submit" class="btn btn-success">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- phone modal -->
+    <div class="container">
+        <div class="modalPhone row" id="modalPhone">
+            <div class="modal_body_phone">
+                <div class="modal_content_phone">
+                    <a href="#img" class="modal_close_phone">&times;</a>
+                    <div class="modal_title_phone" id="idTitle"></div>
+                    <form class="modalForm">
+                        <div class="form-group">
+                            
+                                <div class="modal_text_form">Ваше имя</div>
+                                <input type="text" name="name" placeholder="Введите имя" class="input-group-text">
+                            
+                                <div class="modal_text_form">Ваш телефон</div>
+                                <input type="number" name="phone" placeholder="Введите телефон" class="input-group-text">
+                            
+                                <div class="modal_text_form">Ваше сообщение</div>
+                                <textarea type="text" name="text" placeholder="Введите сообщение" class="form-control input-group-text"></textarea>
+                            
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+    <!-- footer -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="jsContact.js"></script>
+    <script src="desing/modal/messenger/jsMessenger.js"></script>
+    <script src="desing/modal/phone/jsPhone.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.aboutAll {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.navAbout li {
+    list-style-type: none;
+    &:hover,
+    &:active {
+        background-color: rgba(229, 231, 223, 0.5);
+    }
+}
+
+.navAbout {
+    background-color: rgb(229, 231, 223);
+    margin: 10px 0 0 40px;
+    border-radius: 20px;
+}
+
+.text {
+    display: none;
+    margin: 10px 50px 0 30px;
+}
+
+.text.active {
+    display: block;
+}

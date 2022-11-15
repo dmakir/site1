@@ -1,0 +1,86 @@
+//main:../styleContact.scss
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(0, 140, 255),
+        0 0 80px rgb(0, 81, 255),
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+.imgCont{
+    height: auto;
+    max-width: 100%;
+}
+
+.mailContact{
+    position: absolute;
+    left: 130px;
+    top: 335px;
+    font-size: 190px;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: italic;
+    
+    font-weight: 700;
+    mix-blend-mode: soft-light;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    
+    
+}
+
+.mailContact:hover{
+    color: rgba(255, 255, 255, 0.0);
+}
+
+.messengerContact{
+    position: absolute;
+    left: 339px;
+    top: 355px;
+    cursor: pointer;
+    font-size: 178px;
+    text-decoration: none;
+    mix-blend-mode: soft-light;
+    animation: flicker 1.5s infinite alternate;
+    color: rgba(255, 255, 255, 0.014);
+    
+}
+
+.messengerContact:hover{
+    color: rgba(0, 0, 0, 0);
+}
+
+
+
+.PhoneContact{
+    position: absolute;
+    left: 620px;
+    top: 360px;
+    cursor: pointer;
+    font-size: 180px;
+    text-decoration: none;
+    transform: rotate(318deg);
+    font-weight: 300;
+    mix-blend-mode: soft-light;
+    animation: flicker 1.5s infinite alternate;
+    color: rgba(218, 36, 36, 0);
+    
+}
+
+.PhoneContact:hover{
+    color: rgba(0, 0, 0, 0);
+}

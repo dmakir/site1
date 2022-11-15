@@ -1,0 +1,41 @@
+//main:..style.scss
+
+
+.row{
+    margin-left: 8% !important;
+}
+
+.jumbotron{
+    padding: 1em;
+    border-radius: 0;
+    background-color: rgb(245, 243, 243);
+    width: 85%;
+    border-radius: 10px;
+   
+}
+
+.padding{
+    padding-bottom: 2em;
+    margin-left: 0 !important;
+}
+
+.alert{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2em;
+    justify-content: center;
+}
+ 
+.alert hr{
+    border-top: 2px solid silver;
+    width: 95%;
+    margin-top: 0 3em;
+    margin-bottom: 1em;
+   
+}
+
+.img-fluid{
+    height: 75% !important;
+   
+}
+
